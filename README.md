@@ -1,2 +1,2 @@
 # Tic-Tac-Toe-FrontEnd
-Frontend part of a simpla Tic-Tac-Toe-game.
+Frontend part of a simple Tic-Tac-Toe-game.
