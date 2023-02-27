@@ -6,13 +6,18 @@ import { gridA, gridB, gridC, gridD, gridE, gridF, gridG, gridH, gridI,
 
 
 import { getAll } from "./connect.js"; //, getPlayer
-import { renderHighScore } from "./renderUI.js";
+import { renderHighScore, renderInputBox } from "./renderUI.js";
+import { renderBio } from "./renderBio.js";
 
 //getPlayer()
 getAll()
 renderHighScore()
-//renderPrompt()
 
+
+playBtn.addEventListener("click", () => {
+    renderInputBox()
+})
+//renderPrompt()
 
 
 

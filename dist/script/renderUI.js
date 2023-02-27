@@ -8,7 +8,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { getAll } from "./connect.js";
-import { ulName, ulPoints } from "./hoisting.js";
+import { ulName, ulPoints, inputs, cancelBtn, startBtn, namePlayer1, namePlayer2 } from "./hoisting.js";
+import { renderBio } from "./renderBio.js";
 function renderHighScore() {
     return __awaiter(this, void 0, void 0, function* () {
         const highScoreList = yield getAll();
@@ -18,10 +19,24 @@ function renderHighScore() {
             liName.innerText = player.player;
             liPoints.innerText = player.score;
             ulName.append(liName);
+            liName.addEventListener("click", () => renderBio(player.player));
             ulPoints.append(liPoints);
-            console.log(player.player);
-            console.log(player.score);
         }
     });
 }
-export { renderHighScore };
+function renderInputBox() {
+    inputs.style.display = "block";
+    cancelBtn.style.display = "block";
+    startBtn.style.display = "block";
+    cancelBtn.addEventListener("click", () => {
+        hideInputBox();
+    });
+}
+function hideInputBox() {
+    namePlayer1.value = "";
+    namePlayer2.value = "";
+    inputs.style.display = "none";
+    cancelBtn.style.display = "none";
+    startBtn.style.display = "none";
+}
+export { renderHighScore, renderInputBox };

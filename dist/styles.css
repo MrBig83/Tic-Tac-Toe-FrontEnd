@@ -87,8 +87,8 @@ body {
     color: rgb(44,62,79);
     border: 6px solid #2c3e50;
     border-radius: 10px;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 400;
     text-align: center;
 }
 .info{
@@ -169,12 +169,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 60px;
+    margin: 40px;
     text-shadow: 0px 0px 3px white;
     text-transform: uppercase;
 }
 .labelP1, .labelP2{
-    font-size: 60px;
+    font-size: 30px;
+}
+.btnStart{
+    display: none;
 }
 .btn{   
     height: 400px;
@@ -189,9 +192,9 @@ button{
     background-color: #34495e21;
     color: green;
     font-family: 'Audiowide', cursive;
-    border: 6px solid #2c3e50;
+    border: 4px solid #2c3e50;
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 30px;
     z-index: 2;
 }
 .game-board {
@@ -237,7 +240,7 @@ button{
     position: absolute;
     right: 10%;
     top: 15%;
-    width: 400px;
+    width: 320px;
     height: 75vh;
     background-color: rgba(255, 255, 255, 0.80);
     box-shadow: inset 4px 4px 8px black;
@@ -246,7 +249,7 @@ button{
 h2{
     display: flex;
     justify-content: center;
-    font-size: 52px;
+    font-size: 40px;
     padding-top: 10px;
     margin-bottom: 20px;
     text-decoration: underline;
@@ -256,7 +259,7 @@ h2{
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 18px;
 }
 .liHeaderName, .liHeaderPoints{
     border-bottom: 1px solid black;
