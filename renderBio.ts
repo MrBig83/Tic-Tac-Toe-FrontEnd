@@ -31,6 +31,7 @@ function showEditBio(player: IPlayer){
     editBioTxtDiv.style.display = "block"
     editBioTxt.value = player.bio
     btnSaveBio.style.display = "block"
+    btnSaveBio.addEventListener("click", () => saveBio(player))
 
 }
 
@@ -40,7 +41,18 @@ function hideBioBox(){
     btnSaveBio.style.display = "none"
 }
 
+async function saveBio(player: IPlayer){
+    let newBio:string = player.bio
+   
+    
+    
+    const uppdateBioContent:object = { "bio":newBio }
+    await fetch(`http://localhost:3000/api/scorelist/bio/${player.player}`, {
+        method: "PUT", 
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(uppdateBioContent)
+    })
+}
 
 
-
-export { renderBio }
+export { renderBio, IPlayer }

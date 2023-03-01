@@ -1,7 +1,7 @@
-import { gridA, gridB, gridC, gridD, gridE, gridF, gridG, gridH, gridI, 
+import { 
     roundText, playerTurnText, gameBoard, inputs, info, namePlayer1, namePlayer2, playBtn, 
     startBtn, cancelBtn, cancelInfoBtn, btnEditBio, highScorePane, ulName, ulPoints, infoHeader, infoBio, 
-    infoScore, editBioTxt, btnSaveBio, btnDeleteUser, editBioTxtDiv, playerTurn, round, userID 
+    infoScore, editBioTxt, btnSaveBio, btnDeleteUser, editBioTxtDiv, userID 
 } from "./hoisting.js";
 
 
@@ -20,8 +20,8 @@ playBtn.addEventListener("click", () => {
 //renderPrompt()
 
 
-
-
 playBtn.addEventListener("click", () => {
     console.log("Ny klickar vi på play")
 })
+
+//gridA, gridB, gridC, gridD, gridE, gridF, gridG, gridH, gridI, 

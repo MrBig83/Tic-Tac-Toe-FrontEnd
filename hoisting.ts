@@ -1,12 +1,13 @@
-const gridA = document.getElementById("a") as HTMLDivElement;
-const gridB = document.getElementById("b") as HTMLDivElement;
-const gridC = document.getElementById("c") as HTMLDivElement;
-const gridD = document.getElementById("d") as HTMLDivElement;
-const gridE = document.getElementById("e") as HTMLDivElement;
-const gridF = document.getElementById("f") as HTMLDivElement;
-const gridG = document.getElementById("g") as HTMLDivElement;
-const gridH = document.getElementById("h") as HTMLDivElement;
-const gridI = document.getElementById("i") as HTMLDivElement;
+// const gridA = document.getElementById("a") as HTMLDivElement;
+// const gridB = document.getElementById("b") as HTMLDivElement;
+// const gridC = document.getElementById("c") as HTMLDivElement;
+// const gridD = document.getElementById("d") as HTMLDivElement;
+// const gridE = document.getElementById("e") as HTMLDivElement;
+// const gridF = document.getElementById("f") as HTMLDivElement;
+// const gridG = document.getElementById("g") as HTMLDivElement;
+// const gridH = document.getElementById("h") as HTMLDivElement;
+// const gridI = document.getElementById("i") as HTMLDivElement;
+const fireworks = document.querySelector(".yeeey") as HTMLDivElement;
 const roundText = document.querySelector(".roundText") as HTMLTextAreaElement;
 const playerTurnText = document.querySelector(".playerTurn") as HTMLTextAreaElement;
 const gameBoard = document.querySelector(".game-board") as HTMLDivElement;
@@ -29,14 +30,14 @@ const editBioTxt = document.querySelector(".editBioTxt") as HTMLTextAreaElement;
 const btnSaveBio = document.querySelector(".btnSaveBio") as HTMLButtonElement;
 const btnDeleteUser = document.querySelector(".btnDeleteUser") as HTMLButtonElement;
 const editBioTxtDiv = document.querySelector(".editBioTxtDiv") as HTMLTextAreaElement;
-let playerTurn:string;
-let round:number = 0;
+//let playerTurn:string;
+//let round:number = 0;
 let userID:string;
 
 
+//gridA, gridB, gridC, gridD, gridE, gridF, gridG, gridH, gridI, 
 
-
-export { gridA, gridB, gridC, gridD, gridE, gridF, gridG, gridH, gridI, 
+export { fireworks, 
     roundText, playerTurnText, gameBoard, inputs, info, namePlayer1, namePlayer2, playBtn, 
-startBtn, cancelBtn, cancelInfoBtn, btnEditBio, highScorePane, ulName, ulPoints, infoHeader, infoBio, 
-infoScore, editBioTxt, btnSaveBio, btnDeleteUser, editBioTxtDiv, playerTurn, round, userID };
+    startBtn, cancelBtn, cancelInfoBtn, btnEditBio, highScorePane, ulName, ulPoints, infoHeader, 
+    infoBio, infoScore, editBioTxt, btnSaveBio, btnDeleteUser, editBioTxtDiv, userID };

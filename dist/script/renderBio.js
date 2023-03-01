@@ -30,10 +30,22 @@ function showEditBio(player) {
     editBioTxtDiv.style.display = "block";
     editBioTxt.value = player.bio;
     btnSaveBio.style.display = "block";
+    btnSaveBio.addEventListener("click", () => saveBio(player));
 }
 function hideBioBox() {
     info.style.display = "none";
     editBioTxtDiv.style.display = "none";
     btnSaveBio.style.display = "none";
+}
+function saveBio(player) {
+    return __awaiter(this, void 0, void 0, function* () {
+        let newBio = player.bio;
+        const uppdateBioContent = { "bio": newBio };
+        yield fetch(`http://localhost:3000/api/scorelist/bio/${player.player}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(uppdateBioContent)
+        });
+    });
 }
 export { renderBio };
