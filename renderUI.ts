@@ -1,5 +1,5 @@
 import { getAll } from "./connect.js";
-import { ulName, ulPoints, inputs, cancelBtn, startBtn, info, cancelInfoBtn, namePlayer1, namePlayer2, fireworks } from "./hoisting.js";
+import { ulName, ulPoints, inputs, cancelBtn, startBtn, info, cancelInfoBtn, namePlayer1, namePlayer2, fireworks, highScorePane } from "./hoisting.js";
 import { renderBio } from "./renderBio.js";
 import { startGame } from "./renderGame.js";
 import { IUser } from "./saveNewUser.js";
@@ -7,6 +7,7 @@ import { IUser } from "./saveNewUser.js";
 fireworks.style.display="none"
 
 async function renderHighScore(){
+    
     const highScoreList = await getAll()
         sortHighScore(highScoreList)
         ulName.innerHTML="";
@@ -29,6 +30,7 @@ function renderInputBox(){
     inputs.style.display = "block"
     cancelBtn.style.display = "block"
     startBtn.style.display = "block"
+    //startBtn.style.zIndex="0"
     startBtn.addEventListener("click", startGame)
     cancelBtn.addEventListener("click", () => {
         hideInputBox()

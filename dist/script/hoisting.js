@@ -17,6 +17,7 @@ const namePlayer1 = document.querySelector(".namePlayer1");
 const namePlayer2 = document.querySelector(".namePlayer2");
 const playBtn = document.querySelector(".btnPlay");
 const startBtn = document.querySelector(".btnStart");
+const startBtnDiv = document.querySelector(".btn");
 const cancelBtn = document.querySelector(".btnCancel");
 const cancelInfoBtn = document.querySelector(".btnCancelInfo");
 const btnEditBio = document.querySelector(".btnEditBio");
@@ -30,8 +31,9 @@ const editBioTxt = document.querySelector(".editBioTxt");
 const btnSaveBio = document.querySelector(".btnSaveBio");
 const btnDeleteUser = document.querySelector(".btnDeleteUser");
 const editBioTxtDiv = document.querySelector(".editBioTxtDiv");
+const playBtnDiv = document.querySelector(".btnPlayDiv");
 //let playerTurn:string;
 //let round:number = 0;
 let userID;
 //gridA, gridB, gridC, gridD, gridE, gridF, gridG, gridH, gridI, 
-export { fireworks, roundText, playerTurnText, gameBoard, inputs, info, namePlayer1, namePlayer2, playBtn, startBtn, cancelBtn, cancelInfoBtn, btnEditBio, highScorePane, ulName, ulPoints, infoHeader, infoBio, infoScore, editBioTxt, btnSaveBio, btnDeleteUser, editBioTxtDiv, userID };
+export { fireworks, playBtnDiv, startBtnDiv, roundText, playerTurnText, gameBoard, inputs, info, namePlayer1, namePlayer2, playBtn, startBtn, cancelBtn, cancelInfoBtn, btnEditBio, highScorePane, ulName, ulPoints, infoHeader, infoBio, infoScore, editBioTxt, btnSaveBio, btnDeleteUser, editBioTxtDiv, userID };

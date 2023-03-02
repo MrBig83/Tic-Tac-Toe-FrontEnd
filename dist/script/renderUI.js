@@ -35,6 +35,7 @@ function renderInputBox() {
     inputs.style.display = "block";
     cancelBtn.style.display = "block";
     startBtn.style.display = "block";
+    //startBtn.style.zIndex="0"
     startBtn.addEventListener("click", startGame);
     cancelBtn.addEventListener("click", () => {
         hideInputBox();
